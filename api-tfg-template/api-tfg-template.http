@@ -1,0 +1,6 @@
+@api_tfg_template_HostAddress = http://localhost:5003
+
+GET {{api_tfg_template_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
