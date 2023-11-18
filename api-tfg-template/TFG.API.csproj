@@ -16,4 +16,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\TFG.Application\TFG.Application.csproj" />
+    <ProjectReference Include="..\..\TFG.Infrastructure\TFG.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\TFG.SharedKernel\TFG.SharedKernel.csproj" />
+  </ItemGroup>
+
 </Project>
