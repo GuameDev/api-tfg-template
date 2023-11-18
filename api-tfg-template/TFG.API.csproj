@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -17,9 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\TFG.Application\TFG.Application.csproj" />
-    <ProjectReference Include="..\..\TFG.Infrastructure\TFG.Infrastructure.csproj" />
-    <ProjectReference Include="..\..\TFG.SharedKernel\TFG.SharedKernel.csproj" />
+    <ProjectReference Include="..\TFG.Application\TFG.Application.csproj" />
+    <ProjectReference Include="..\TFG.Domain\TFG.Domain.csproj" />
+    <ProjectReference Include="..\TFG.Infrastructure\TFG.Infrastructure.csproj" />
+    <ProjectReference Include="..\TFG.SharedKernel\TFG.SharedKernel.csproj" />
   </ItemGroup>
+
 
 </Project>
