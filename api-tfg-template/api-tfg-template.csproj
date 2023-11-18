@@ -8,6 +8,7 @@
     <RootNamespace>api_tfg_template</RootNamespace>
     <UserSecretsId>0c8e915b-b861-41d1-bfff-be672a622778</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>

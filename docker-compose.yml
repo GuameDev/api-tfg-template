@@ -1,0 +1,44 @@
+version: '3.4'
+
+networks:
+  app-network-public:
+    driver: bridge
+
+volumes:
+  sql-server-data:
+    driver: local
+  sqldata:
+  sqllog:
+  sqlbackup:
+
+services:
+
+  # API Service
+  # api-tfg-template:
+  #   image: ${DOCKER_REGISTRY-}apitfgtemplate
+  #   build:
+  #     context: .
+  #     dockerfile: api-tfg-template/Dockerfile
+
+  # DB 
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: db-sqlserver
+    networks:
+      - app-network-public
+    restart: always
+    #TODO: Colocar las variables de entorno en un fichero aparte 
+    environment:
+    - ACCEPT_EULA=Y
+    - MSSQL_DATA_DIR=/var/opt/sqlserver/data
+    - MSSQL_LOG_DIR=/var/opt/sqlserver/log
+    - MSSQL_BACKUP_DIR=/var/opt/sqlserver/backup
+    - MSSQL_SA_PASSWORD=Password12345
+    ports:
+      - '1433:1433'
+    volumes:
+      - sql-server-data:/var/opt/mssql/
+      - sqldata:/var/opt/sqlserver/data
+      - sqllog:/var/opt/sqlserver/log
+      - sqlbackup:/var/opt/sqlserver/backup
+      - /c/docker/shared:/usr/shared
