@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api-tfg-template", "api-tfg-template\api-tfg-template.csproj", "{D9C36690-4AE4-4FA4-9410-A79035ED5F75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TFG.API", "api-tfg-template\TFG.API.csproj", "{D9C36690-4AE4-4FA4-9410-A79035ED5F75}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D23A49C9-A399-4787-8568-A1FB1DCEFAA3}"
 EndProject
