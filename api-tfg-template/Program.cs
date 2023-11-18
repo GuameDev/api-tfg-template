@@ -1,5 +1,6 @@
+using TFG.API.Extensions;
 
-namespace api_tfg_template
+namespace TFG.API
 {
     public class Program
     {
@@ -13,6 +14,8 @@ namespace api_tfg_template
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddApplicationService();
 
             var app = builder.Build();
 

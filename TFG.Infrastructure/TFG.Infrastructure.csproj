@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TFG.Application\TFG.Application.csproj" />
+    <ProjectReference Include="..\TFG.Domain\TFG.Domain.csproj" />
+    <ProjectReference Include="..\TFG.SharedKernel\TFG.SharedKernel.csproj" />
+  </ItemGroup>
+
+</Project>
